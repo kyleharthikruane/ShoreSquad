@@ -5,33 +5,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShoreSquad</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=3">
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#007acc">
+    <style>
+        /* Test style to force refresh */
+        body { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to ShoreSquad!</h1>
-        <p>Rally your crew, track weather, and hit the next beach cleanup!</p>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">ShoreSquad</div>
+            <div class="nav-tabs">
+                <a href="#" class="nav-tab active">Home</a>
+                <a href="#" class="nav-tab">Events</a>
+                <a href="#" class="nav-tab">Map</a>
+                <a href="#" class="nav-tab">My Crew</a>
+            </div>
+        </nav>
     </header>
-    <main>
-        <section id="map">
-            <h2>Find Your Beach Cleanup</h2>
-            <!-- Map integration will go here -->
+
+    <main class="main-content">
+        <!-- Statistics Section -->
+        <section class="stats-section">
+            <div class="stat-card">
+                <div class="stat-icon">🗑️</div>
+                <div class="stat-number">2500</div>
+                <div class="stat-label">Pounds Collected</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🏖️</div>
+                <div class="stat-number">45</div>
+                <div class="stat-label">Beaches Cleaned</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">👥</div>
+                <div class="stat-number">350</div>
+                <div class="stat-label">Squad Members</div>
+            </div>
         </section>
-        <section id="weather">
-            <h2>Current Weather</h2>
-            <!-- Weather data will be displayed here -->
-        </section>
-        <section id="crew">
-            <h2>Your Crew</h2>
-            <!-- Social features and crew management will go here -->
+
+        <!-- Upcoming Cleanups Section -->
+        <section class="cleanups-section">
+            <h2>Upcoming Cleanups</h2>
+            <div class="cleanups-grid">
+                <div class="cleanup-card">
+                    <div class="cleanup-date">Jun 1</div>
+                    <h3 class="cleanup-title">Santa Monica Beach Cleanup</h3>
+                    <div class="cleanup-location">Santa Monica Pier</div>
+                    <div class="cleanup-time">09:00 AM</div>
+                    <div class="squad-members">
+                        <div class="member-avatars">
+                            <div class="avatar">A</div>
+                            <div class="avatar">B</div>
+                            <div class="avatar">C</div>
+                            <div class="avatar">D</div>
+                            <div class="avatar">+</div>
+                        </div>
+                        <span class="member-count">12 squad members</span>
+                    </div>
+                    <button class="join-button">Join Squad</button>
+                </div>
+
+                <div class="cleanup-card">
+                    <div class="cleanup-date">Jun 3</div>
+                    <h3 class="cleanup-title">Venice Beach Squad Action</h3>
+                    <div class="cleanup-location">Venice Beach Boardwalk</div>
+                    <div class="cleanup-time">08:30 AM</div>
+                    <div class="squad-members">
+                        <div class="member-avatars">
+                            <div class="avatar">M</div>
+                            <div class="avatar">J</div>
+                            <div class="avatar">K</div>
+                            <div class="avatar">L</div>
+                        </div>
+                        <span class="member-count">8 squad members</span>
+                    </div>
+                    <button class="join-button">Join Squad</button>
+                </div>
+
+                <div class="cleanup-card">
+                    <div class="cleanup-date">Jun 7</div>
+                    <h3 class="cleanup-title">Malibu Coast Conservation</h3>
+                    <div class="cleanup-location">Malibu State Beach</div>
+                    <div class="cleanup-time">07:00 AM</div>
+                    <div class="squad-members">
+                        <div class="member-avatars">
+                            <div class="avatar">S</div>
+                            <div class="avatar">T</div>
+                            <div class="avatar">R</div>
+                            <div class="avatar">P</div>
+                            <div class="avatar">Q</div>
+                        </div>
+                        <span class="member-count">15 squad members</span>
+                    </div>
+                    <button class="join-button">Join Squad</button>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2023 ShoreSquad. All rights reserved.</p>
-    </footer>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a href="#" class="bottom-nav-item active">
+            <div class="bottom-nav-icon">🏠</div>
+            <div class="bottom-nav-label">Home</div>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <div class="bottom-nav-icon">📅</div>
+            <div class="bottom-nav-label">Events</div>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <div class="bottom-nav-icon">🗺️</div>
+            <div class="bottom-nav-label">Map</div>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <div class="bottom-nav-icon">👥</div>
+            <div class="bottom-nav-label">Squad</div>
+        </a>
+    </nav>
+
     <script src="js/app.js"></script>
 </body>
 
