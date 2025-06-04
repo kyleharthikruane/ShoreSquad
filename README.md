@@ -1,12 +1,17 @@
 # ShoreSquad
 
+🌊 **Live Demo**: [https://kyleharthikruane.github.io/ShoreSquad/](https://kyleharthikruane.github.io/ShoreSquad/)
+
 ## Project Overview
-ShoreSquad is a web application designed to mobilize young people for beach cleanups by providing an interactive map and weather tracking features. The app aims to make eco-action fun and connected, encouraging users to rally their friends and participate in environmental initiatives.
+ShoreSquad is a modern Progressive Web App (PWA) designed to mobilize young people for beach cleanups by providing interactive maps, real-time weather tracking, and social features. The app makes eco-action fun and connected, encouraging users to rally their crew and participate in environmental initiatives.
 
 ## Features
-- **Interactive Map**: Users can view and plan beach cleanup events using an integrated map.
-- **Weather Tracking**: Access real-time weather data to choose the best days for cleanups.
-- **Social Features**: Connect with friends and share cleanup events to foster community involvement.
+- **🗺️ Interactive Map**: Google Maps integration showing cleanup locations (Pasir Ris Beach)
+- **🌡️ Weather Tracking**: Real-time weather data using NEA Singapore API with 4-day forecast
+- **👥 Social Features**: Connect with your cleanup crew and join squad events
+- **📱 Progressive Web App**: Installable on mobile devices with offline functionality
+- **🎨 Modern UI**: Beautiful gradient design with responsive layout
+- **📊 Statistics**: Track cleanup impact with kilograms collected and beaches cleaned
 
 ## Color Palette
 - **Ocean Blue**: #0077be
@@ -16,27 +21,49 @@ ShoreSquad is a web application designed to mobilize young people for beach clea
 - **Sunshine Yellow**: #ffeb3b
 
 ## Technologies Used
-- HTML5
-- CSS3
-- JavaScript
-- Map API (e.g., Google Maps, Leaflet)
-- Weather API (e.g., OpenWeatherMap)
+- **Frontend**: HTML5, CSS3, JavaScript ES6+
+- **Maps**: Google Maps Embed API
+- **Weather**: NEA Singapore Realtime Weather API (data.gov.sg)
+- **PWA**: Service Worker, Web App Manifest
+- **Styling**: CSS Grid, Flexbox, CSS Animations
+- **Hosting**: GitHub Pages with automated deployment
+
+## Live Application
+🚀 **Access the app**: [https://kyleharthikruane.github.io/ShoreSquad/](https://kyleharthikruane.github.io/ShoreSquad/)
 
 ## Setup Instructions
-1. Clone the repository:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/kyleharthikruane/ShoreSquad.git
    ```
-   git clone https://github.com/yourusername/ShoreSquad.git
-   ```
-2. Navigate to the project directory:
-   ```
+
+2. **Navigate to the project directory**:
+   ```bash
    cd ShoreSquad
    ```
-3. Open `index.html` in your web browser or use Live Server in Visual Studio Code for a better development experience.
+
+3. **Run locally**:
+   ```bash
+   # Using Python
+   python -m http.server 8000
+   
+   # Or using Node.js
+   npx serve .
+   ```
+
+4. **Open in browser**: Navigate to `http://localhost:8000`
 
 ## Usage Guidelines
-- To view the interactive map, ensure you have an API key for the map service integrated in `js/app.js`.
-- For weather data, sign up for an API key from your chosen weather service and include it in the JavaScript file.
-- Customize the styles in `css/styles.css` to align with your branding preferences.
+- **Weather Data**: The app uses NEA Singapore's public API for real-time weather information
+- **Map Integration**: Features Google Maps showing the next cleanup location at Pasir Ris Beach
+- **Progressive Web App**: Can be installed on mobile devices for native app-like experience
+- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
+- **Offline Support**: Service worker enables basic offline functionality
+
+## API Integration
+- **NEA Weather API**: Provides 4-day weather forecast and current temperature
+- **Google Maps**: Embedded map showing cleanup locations with custom markers
+- **Fallback System**: Mock data ensures functionality when APIs are unavailable
 
 ## Contribution
 Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
