@@ -1,0 +1,54 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Light cyan background */
+    color: #004d40; /* Dark teal text */
+}
+
+header {
+    background-color: #00796b; /* Teal header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #ffab40; /* Amber button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #ff8f00; /* Darker amber on hover */
+}
+
+.map-container {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+}
+
+.footer {
+    background-color: #004d40; /* Dark teal footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

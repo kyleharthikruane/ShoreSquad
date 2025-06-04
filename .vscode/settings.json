@@ -1,0 +1,7 @@
+{
+    "liveServer.settings.port": 5501,
+    "liveServer.settings.root": "/ShoreSquad",
+    "editor.formatOnSave": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000
+}
